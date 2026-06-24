@@ -1,0 +1,70 @@
+========================================================================
+CORRIDA RANDOM - seed = 2026
+========================================================================
+
+1) Grafo 3-regular de orden 8
+-----------------------------
+Vértices: [0, 1, 2, 3, 4, 5, 6, 7]
+Aristas : [(0, 1), (0, 4), (0, 6), (1, 6), (1, 7), (2, 3), (2, 4), (2, 5), (3, 5), (3, 7), (4, 5), (6, 7)]
+Grados  : [3, 3, 3, 3, 3, 3, 3, 3]
+
+2) Grafo generado desde la sucesión gráfica [3, 3, 2, 2, 2, 2]
+--------------------------------------------------------------
+Vértices: [0, 1, 2, 3, 4, 5]
+Aristas : [(0, 1), (0, 2), (0, 3), (1, 4), (1, 5), (2, 3), (4, 5)]
+Grados  : [3, 3, 2, 2, 2, 2]
+
+3) Grafo pesado random para MST
+-------------------------------
+Vértices: [0, 1, 2, 3, 4, 5, 6]
+Aristas con peso:
+  0 -- 1   peso=2
+  0 -- 2   peso=22
+  0 -- 6   peso=1
+  1 -- 2   peso=21
+  1 -- 3   peso=8
+  1 -- 5   peso=16
+  1 -- 6   peso=2
+  2 -- 6   peso=8
+  3 -- 4   peso=22
+  3 -- 5   peso=17
+  3 -- 6   peso=5
+  4 -- 5   peso=24
+
+4) Kruskal
+----------
+  0 -- 1   peso=2
+  0 -- 6   peso=1
+  1 -- 5   peso=16
+  2 -- 6   peso=8
+  3 -- 4   peso=22
+  3 -- 6   peso=5
+Peso total = 54
+
+5) Kruskal inverso
+------------------
+  0 -- 6   peso=1
+  1 -- 5   peso=16
+  1 -- 6   peso=2
+  2 -- 6   peso=8
+  3 -- 4   peso=22
+  3 -- 6   peso=5
+Peso total = 54
+
+6) Prim
+-------
+  0 -- 1   peso=2
+  0 -- 6   peso=1
+  1 -- 5   peso=16
+  3 -- 4   peso=22
+  6 -- 2   peso=8
+  6 -- 3   peso=5
+Peso total = 54
+
+Comparación final
+-----------------
+Kruskal         : 54
+Kruskal inverso : 54
+Prim            : 54
+
+Los tres algoritmos dieron el mismo peso total.
